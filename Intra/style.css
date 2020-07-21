@@ -1,0 +1,1260 @@
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 100;
+}
+#landing {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #191919;
+}
+.load_anim {
+  height: 100%;
+  width: auto;
+}
+#logo_anim :nth-child(1) {
+  display: block;
+}
+#logo_anim :nth-child(2) {
+  display: none;
+}
+#logo_anim :nth-child(3) {
+  display: none;
+}
+#logo_anim :nth-child(4) {
+  display: none;
+}
+#logo_anim {
+  position: absolute;
+  height: 20vh;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#land_moon {
+  position: absolute;
+  height: 29vw;
+  width: auto;
+  top: 0;
+  right: 0;
+}
+#land_planet {
+  position: absolute;
+  height: 65vw;
+  width: auto;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50%);
+  z-index: 100;
+}
+#star_container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.stars {
+  position: absolute;
+}
+#star_container :nth-child(1) {
+  height: 17px;
+  width: auto;
+  top: 10%;
+  left: 7%;
+  animation: twinkle 2s infinite linear;
+}
+#star_container :nth-child(2) {
+  height: 17px;
+  width: auto;
+  top: 7%;
+  left: 38%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container :nth-child(3) {
+  height: 17px;
+  width: auto;
+  top: 14%;
+  left: 69%;
+  animation: twinkle 2s infinite 1s linear;
+}
+#star_container :nth-child(4) {
+  height: 18px;
+  width: auto;
+  top: 36%;
+  left: 20%;
+  opacity: 80%;
+  animation: twinkle 2s infinite 0.7s linear;
+}
+#star_container :nth-child(5) {
+  height: 17px;
+  width: auto;
+  top: 87%;
+  left: 54%;
+  animation: twinkle 2s infinite 0.2s linear;
+}
+#star_container :nth-child(6) {
+  height: 17px;
+  width: auto;
+  top: 57%;
+  left: 78%;
+  animation: twinkle 2s infinite 0.6s linear;
+}
+#star_container :nth-child(7) {
+  height: 17px;
+  width: auto;
+  top: 80%;
+  left: 95%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container :nth-child(8) {
+  height: 17px;
+  width: auto;
+  top: 35%;
+  left: 52%;
+  animation: twinkle 2s infinite 0.4s linear;
+}
+#star_container :nth-child(9) {
+  height: 17px;
+  width: auto;
+  top: 90%;
+  left: 80%;
+  animation: twinkle 2s infinite 0.8s linear;
+}
+@keyframes twinkle {
+  25% {
+    transform: scale(0.7);
+  }
+  75% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#info {
+  position: relative;
+  height: fit-content;
+  width: 100vw;
+  background-color: #191919;
+  overflow: hidden;
+}
+#info_container {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#rochet {
+  position: absolute;
+  bottom: 20%;
+  right: 13%;
+  height: 63vh;
+}
+@font-face {
+  font-family: "bauhaus_93regular";
+  src: url("bauhaus_93_regular-webfont.woff2") format("woff2"),
+    url("bauhaus_93_regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+#rochet_name {
+  font-family: "bauhaus_93regular";
+  font-size: 4vw;
+  color: #dd7028;
+  position: absolute;
+  bottom: 6vh;
+  right: 14.5vw;
+}
+#go {
+  z-index: 100;
+  position: absolute;
+  bottom: 5vh;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2vw;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 200;
+  width: auto;
+  animation: appear 1s ease-in 2s forwards;
+  transition: all 0.5s ease-out;
+}
+#go:hover {
+  letter-spacing: 1px;
+}
+#go_img {
+  z-index: 100;
+  height: 18px;
+  width: auto;
+  position: relative;
+  left: 5px;
+  animation: boing 1s ease-in 2s infinite;
+}
+@keyframes boing {
+  0% {
+    top: -2px;
+  }
+  50% {
+    top: 5px;
+  }
+  100% {
+    top: -2px;
+  }
+}
+#info_content {
+  position: absolute;
+  left: 67vw;
+  top: 15vh;
+}
+#info_head1 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 1.7vw;
+  word-spacing: 5px;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-bottom: 0.3em solid #dd8e28;
+}
+#info_text1 {
+  margin-top: 10vh;
+  width: 30vw;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+.highlight {
+  color: #dd8e28;
+}
+#info_text1 :nth-child(2) {
+  position: relative;
+  left: -13%;
+  margin-top: 9vh;
+}
+#info_text1 :nth-child(3) {
+  position: relative;
+  left: -30%;
+  margin-top: 9vh;
+}
+#go2 {
+  color: #dd8e28;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.7vw;
+  font-weight: 400;
+  position: absolute;
+  top: 120%;
+  left: -45%;
+  transition: all 0.5s ease-out;
+  width: fit-content;
+}
+#go2:hover {
+  letter-spacing: 1px;
+  transform: translateX(0.1em);
+}
+#go2:hover #go2_img {
+  left: 6em;
+}
+#go2_img {
+  position: relative;
+  float: right;
+  left: 5.5em;
+  top: 1em;
+  height: 0.3em;
+  width: auto;
+  transition: all 0.5s ease-out;
+  animation: boing2 1s ease-in infinite;
+}
+@keyframes boing2 {
+  0% {
+    transform: translate(30%, -10%);
+  }
+  50% {
+    transform: translate(30%, -80%);
+  }
+  100% {
+    transform: translate(30%, -10%);
+  }
+}
+
+#stones {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+.rocks {
+  position: absolute;
+  height: 70px;
+  right: 0;
+}
+#stones :nth-child(1) {
+  top: 7vh;
+  left: 31vw;
+  height: 1vw;
+  animation: float 2s linear infinite;
+}
+#stones :nth-child(2) {
+  top: 28vh;
+  left: 32vw;
+  height: 5vw;
+  animation: float 2.5s linear 0.5s infinite;
+}
+#stones :nth-child(3) {
+  top: 38vh;
+  left: 42vw;
+  height: 2.5vh;
+  animation: float 3s linear 0.2s infinite;
+}
+#stones :nth-child(4) {
+  top: 53vh;
+  left: 20vw;
+  height: 15px;
+  animation: float 1.7s linear 0.5s infinite;
+}
+#stones :nth-child(5) {
+  top: 62vh;
+  left: 20vw;
+  height: 5.5vw;
+  animation: float 2s linear 0.7s infinite;
+}
+#stones :nth-child(6) {
+  top: 68vh;
+  left: 10.5vw;
+  height: 1.2vw;
+  animation: float 2s linear 1s infinite;
+}
+@keyframes float {
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+#info_content2 {
+  position: absolute;
+  top: 15vh;
+  left: 7vw;
+  width: 40%;
+}
+#info_head2 {
+  position: relative;
+  width: 6em;
+  font-size: 2.5vw;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  border-bottom: 0.2em solid #dd8e28;
+  margin: 0;
+}
+#info_text2 {
+  position: relative;
+  left: 15%;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.6vw;
+  width: 80%;
+  margin-top: 10vh;
+}
+#info_text2 :nth-child(2) {
+  transform: translateX(-5vw);
+  margin-top: 15%;
+}
+#info2 {
+  position: absolute;
+  top: 200vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: #191919;
+  overflow: hidden;
+}
+#info_container2 {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+#book {
+  position: relative;
+  margin-top: 15%;
+  left: -5%;
+  background-color: #dd8e28;
+  border-radius: 10px;
+  height: 9vh;
+  width: 17vw;
+  text-align: center;
+  line-height: 9vh;
+  color: white;
+  font-size: 1.5vw;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+#book:hover {
+  background-color: #dd7028;
+  transform: scale(1.1);
+}
+#book :hover.exclaim {
+  color: black;
+}
+#plan {
+  position: absolute;
+  top: 300vh;
+  height: 100vh;
+  background-color: #191919;
+  width: 100%;
+}
+#plan_head {
+  position: absolute;
+  top: 5%;
+  width: fit-content;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 50px 0 75px;
+  border-radius: 0 10px 10px 0;
+  background-color: #58a2a8;
+  font-family: "Exo 2", sans-serif;
+  font-size: 3.5vh;
+  color: white;
+}
+#astro_mamu {
+  height: 60vh;
+  width: auto;
+  position: absolute;
+  bottom: -20vh;
+  left: 5vw;
+}
+#footer {
+  position: absolute;
+  top: 470vh;
+  height: 125vh;
+  background-color: #191919;
+  width: 100%;
+  z-index: -2;
+}
+#footer_head {
+  position: absolute;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
+  font-size: 2.2vw;
+  color: white;
+  width: fit-content;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 0;
+  border-bottom: 0.3em solid #775db5;
+}
+#footer_register {
+  position: absolute;
+  height: 40vh;
+  width: 40vw;
+  background-color: #775db5;
+  border-radius: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35vh;
+}
+#email {
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+  text-align: center;
+  color: white !important;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 20%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(0, 0, 0, 0.3);
+  transition: all 0.5s ease-out;
+}
+#pass {
+  position: relative;
+  top: 25%;
+  left: 50%;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 200;
+  font-size: 1.5vw;
+  color: white !important;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 20%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgb(0, 0, 0, 0.3);
+}
+#submit_text {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  font-size: 1.2vw;
+  font-family: "Exo 2", sans-serif;
+  color: rgb(0, 0, 0, 0.3);
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: opacity 0.5s ease;
+}
+#confirm {
+  padding: 1em 2em;
+  background-color: #775db5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6vw;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  position: relative;
+  transform: translateX(-50%);
+  cursor: pointer;
+  outline: none;
+}
+#pakka {
+  padding: 1em 2em;
+  width: fit-content;
+  background-color: #775db5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6vw;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  position: relative;
+  transform: translateX(-50%);
+  cursor: pointer;
+  outline: none;
+}
+#foot {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+#foot_imgs {
+  position: absolute;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8vw;
+  opacity: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#foot_text {
+  position: absolute;
+  bottom: 11vh;
+  width: 100%;
+  text-align: center;
+  font-size: 1vw;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  opacity: 40%;
+  line-height: 1.2vw;
+}
+#star_container2 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.stars {
+  position: absolute;
+}
+#star_container2 :nth-child(1) {
+  height: 15px;
+  width: auto;
+  top: 35%;
+  left: 22%;
+  animation: twinkle 2s infinite linear;
+}
+#star_container2 :nth-child(2) {
+  height: 17px;
+  width: auto;
+  top: 85%;
+  left: 25%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container2 :nth-child(3) {
+  height: 17px;
+  width: auto;
+  top: 60%;
+  left: 8%;
+  animation: twinkle 2s infinite 1s linear;
+}
+#star_container2 :nth-child(4) {
+  height: 18px;
+  width: auto;
+  top: 10%;
+  left: 75%;
+  opacity: 80%;
+  animation: twinkle 2s infinite 0.7s linear;
+}
+#star_container2 :nth-child(5) {
+  height: 17px;
+  width: auto;
+  top: 30%;
+  left: 90%;
+  animation: twinkle 2s infinite 0.2s linear;
+}
+#star_container2 :nth-child(6) {
+  height: 17px;
+  width: auto;
+  top: 57%;
+  left: 82%;
+  animation: twinkle 2s infinite 0.6s linear;
+}
+#star_container2 :nth-child(7) {
+  height: 17px;
+  width: auto;
+  top: 80%;
+  left: 95%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container2 :nth-child(8) {
+  height: 17px;
+  width: auto;
+  top: 80%;
+  left: 62%;
+  animation: twinkle 2s infinite 0.4s linear;
+}
+#star_container2 :nth-child(9) {
+  height: 17px;
+  width: auto;
+  top: 105%;
+  left: 3%;
+  animation: twinkle 2s infinite 0.8s linear;
+}
+#in_btns {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-30%);
+}
+#universe {
+  position: absolute;
+  height: 55vh;
+  width: 55%;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.planet_mask {
+  border-radius: 2vw;
+  position: relative;
+  height: 100%;
+  width: 17vw;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+}
+.planet {
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+  z-index: 100;
+}
+.planet_name_bg {
+  height: 15%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.planet_name {
+  font-family: "Concert One", cursive;
+  color: white;
+  font-size: 1.7vw;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  z-index: 10;
+}
+
+#witheria {
+  background-image: url("Web_imgs/Witheria.jpg");
+  background-size: cover;
+  transform: translateX(80%) scale(0.6);
+  z-index: 25;
+}
+#rhopalocera {
+  background-image: url("Web_imgs/Witheria.jpg");
+  background-position: 17% 0;
+  background-size: cover;
+  transform: translateX(30%) scale(0.8);
+  z-index: 50;
+}
+#dearth {
+  background-image: url("Web_imgs/Dearth.jpg");
+  background-size: cover;
+  z-index: 100;
+}
+#pyrous {
+  background-image: url("Web_imgs/Pyrous.jpg");
+  background-size: cover;
+  transform: translateX(-30%) scale(0.8);
+  z-index: 50;
+}
+#mars {
+  background-image: url("Web_imgs/Mars.jpg");
+  background-size: cover;
+  background-position: 50% 0;
+  transform: translateX(-80%) scale(0.6);
+  z-index: 25;
+}
+
+.planet_mask:hover {
+  transform: scale(1.05) !important;
+  background-color: rgb(0, 0, 0, 0);
+  position: relative;
+}
+.planet_mask:hover .planet {
+  opacity: 0;
+  transition: 1s;
+}
+#m1 {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+#m2 {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+#m3 {
+  background-color: rgb(0, 0, 0, 0);
+}
+#m4 {
+  background-color: rgb(0, 0, 0, 0.5);
+}
+#m5 {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+#plan2 {
+  position: absolute;
+  color: white;
+  top: 400vh;
+  height: 70vh;
+  background-color: #191919;
+  width: 100%;
+}
+
+#planet_info_container1 {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+#planet_info_container2 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+#planet_info_container3 {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+#planet_head {
+  position: absolute;
+  font-family: "Exo 2", sans-serif;
+  font-size: 2vw;
+  width: fit-content;
+  padding: 10px 0;
+  left: 50%;
+  top: -15vh;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 5vh;
+  border-bottom: 0.3em solid #775db5;
+}
+#planet_info {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.3vw;
+  text-align: center;
+  width: 35%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#planet_head2 {
+  position: absolute;
+  font-family: "Exo 2", sans-serif;
+  font-size: 2vw;
+  width: fit-content;
+  padding: 10px 0;
+  left: 50%;
+  top: -15vh;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 5vh;
+  border-bottom: 0.3em solid #ef8943;
+}
+.type2 {
+  border-right: 0.3em solid #ef8943;
+  font-size: 1.55vw;
+  text-align: center !important;
+}
+#planet_head3 {
+  position: absolute;
+  font-family: "Exo 2", sans-serif;
+  font-size: 2vw;
+  width: fit-content;
+  padding: 10px 0;
+  left: 50%;
+  top: -15vh;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 5vh;
+  border-bottom: 0.3em solid #68ad61;
+}
+.type3 {
+  border-right: 0.3em solid #68ad61;
+  font-size: 1.55vw;
+  text-align: center !important;
+}
+#planet_stats {
+  position: absolute;
+  top: 20vh;
+  left: 52%;
+  transform: translateX(-50%);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.3vw;
+  display: block;
+  border-spacing: 8vh 3vh;
+}
+#planet_stats td {
+  width: 15vw;
+  height: 1.5em;
+  text-align: left;
+}
+.type {
+  border-right: 0.3em solid #775db5;
+  font-size: 1.55vw;
+  text-align: center !important;
+}
+#select {
+  padding: 15px 30px;
+  background-color: #775db5;
+  color: white;
+  border-radius: 2vh;
+  border: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 60vh;
+  left: 50%;
+  width: 7em;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+#select:hover {
+  width: 8em;
+}
+#star_container3 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#star_container3 :nth-child(1) {
+  height: 17px;
+  width: auto;
+  top: -5%;
+  left: 10%;
+  animation: twinkle 2s infinite linear;
+}
+#star_container3 :nth-child(2) {
+  height: 15px;
+  width: auto;
+  top: -7%;
+  left: 75%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container3 :nth-child(3) {
+  height: 12px;
+  width: auto;
+  top: 35%;
+  left: 4%;
+  animation: twinkle 2s infinite 1s linear;
+}
+#star_container3 :nth-child(4) {
+  height: 18px;
+  width: auto;
+  top: 57%;
+  left: 33%;
+  opacity: 80%;
+  animation: twinkle 2s infinite 0.7s linear;
+}
+#star_container3 :nth-child(5) {
+  height: 17px;
+  width: auto;
+  top: 20%;
+  left: 84%;
+  animation: twinkle 2s infinite 0.2s linear;
+}
+#star_container3 :nth-child(6) {
+  height: 17px;
+  width: auto;
+  top: 50%;
+  left: 70%;
+  animation: twinkle 2s infinite 0.6s linear;
+}
+#star_container3 :nth-child(7) {
+  height: 13px;
+  width: auto;
+  top: 65%;
+  left: 90%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container3 :nth-child(8) {
+  height: 17px;
+  width: auto;
+  top: -15%;
+  left: 32%;
+  animation: twinkle 2s infinite 0.4s linear;
+}
+#star_container4 {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#star_container4 :nth-child(1) {
+  height: 17px;
+  width: auto;
+  top: 11%;
+  left: 30%;
+  animation: twinkle 2s infinite linear;
+}
+#star_container4 :nth-child(2) {
+  height: 15px;
+  width: auto;
+  top: 60%;
+  left: 20%;
+  animation: twinkle 2s infinite 0.5s linear;
+}
+#star_container4 :nth-child(3) {
+  height: 12px;
+  width: auto;
+  top: 35%;
+  left: 4%;
+  animation: twinkle 2s infinite 1s linear;
+}
+#star_container4 :nth-child(4) {
+  height: 18px;
+  width: auto;
+  top: 50%;
+  left: 95%;
+  opacity: 80%;
+  animation: twinkle 2s infinite 0.7s linear;
+}
+#star_container4 :nth-child(5) {
+  height: 17px;
+  width: auto;
+  top: 20%;
+  left: 84%;
+  animation: twinkle 2s infinite 0.2s linear;
+}
+#star_container4 :nth-child(6) {
+  height: 17px;
+  width: auto;
+  top: 65%;
+  left: 80%;
+  animation: twinkle 2s infinite 0.2s linear;
+}
+.info_lines {
+  height: 6vh;
+  width: auto;
+  position: absolute;
+  top: 25vh;
+  right: 10vw;
+}
+#line1 {
+  top: 25vh;
+  right: 22vw;
+}
+#line2 {
+  top: 25vh;
+  right: 12vw;
+  height: 9vh;
+}
+#line3 {
+  top: 47vh;
+  right: 22vw;
+  height: 5vh;
+}
+#line4 {
+  top: 64vh;
+  right: 12vw;
+  height: 3.5vh;
+}
+#line5 {
+  top: 67vh;
+  right: 24.5vw;
+  height: 7vh;
+}
+.rochet_info {
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  font-size: 2.5vh;
+  font-weight: 100;
+  position: absolute;
+  line-height: 3vh;
+}
+#rochet_info1 {
+  top: 23.5vh;
+  left: 68vw;
+  width: 0ch;
+  height: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-delay: 0.7s !important;
+
+  animation-fill-mode: forwards !important;
+}
+#rochet_info2 {
+  top: 23vh;
+  left: 89vw;
+  width: 0ch;
+  height: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-delay: 1.2s !important;
+  animation-fill-mode: forwards !important;
+}
+#rochet_info3 {
+  top: 45vh;
+  left: 65.5vw;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-delay: 1.7s !important;
+  animation-fill-mode: forwards !important;
+}
+#rochet_info4 {
+  top: 63vh;
+  left: 89vw;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-delay: 2.2s !important;
+  animation-fill-mode: forwards !important;
+}
+#rochet_info5 {
+  top: 65vh;
+  left: 65vw;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-delay: 2.5s !important;
+  animation-fill-mode: forwards !important;
+}
+@keyframes ping1 {
+  0% {
+    width: 0ch;
+    border-right: 0.1vw solid white;
+  }
+  95% {
+    width: 12ch;
+  }
+  100% {
+    width: 12ch;
+    border: none;
+  }
+}
+@keyframes ping2 {
+  0% {
+    width: 0ch;
+    border-right: 0.1vw solid white;
+  }
+  95% {
+    width: 15ch;
+  }
+  100% {
+    width: 15ch;
+    border: none;
+  }
+}
+@keyframes ping3 {
+  0% {
+    width: 0ch;
+    border-right: 0.1vw solid white;
+  }
+  95% {
+    width: 17ch;
+  }
+  100% {
+    width: 17ch;
+    border: none;
+  }
+}
+@keyframes ping4 {
+  0% {
+    width: 0ch;
+    border-right: 0.1vw solid white;
+  }
+  95% {
+    width: 16ch;
+  }
+  100% {
+    width: 16ch;
+    border: none;
+  }
+}
+@keyframes ping5 {
+  0% {
+    width: 0ch;
+    border-right: 0.1vw solid white;
+  }
+  95% {
+    width: 15ch;
+  }
+  100% {
+    width: 15ch;
+    border: none;
+  }
+}
+
+/*ok*/
+
+@media screen and (max-device-width: 1000px) {
+  #landing {
+    z-index: 100;
+    overflow: hidden;
+  }
+  #info {
+    display: none;
+  }
+  #info2 {
+    display: none;
+  }
+  #go {
+    display: none;
+  }
+  #plan {
+    top: 100vh;
+  }
+  #universe {
+    height: 40vh;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .planet_mask {
+    width: 40vw;
+  }
+  .planet_name {
+    font-size: 3vh;
+  }
+  #plan2 {
+    top: 180vh;
+  }
+  #planet_head,
+  #planet_head2,
+  #planet_head3 {
+    font-size: 4vh;
+  }
+  #planet_info {
+    font-size: 2vh;
+    width: 70%;
+  }
+  #planet_stats {
+    font-size: 1.5vh;
+  }
+  #astro_mamu {
+    display: none;
+  }
+  #footer {
+    top: 240vh;
+  }
+  #select {
+    font-size: 3vh;
+  }
+  #footer_head {
+    font-size: 3vh;
+  }
+  #footer_register {
+    width: 70%;
+  }
+  #email,
+  #pass,
+  #confirm,
+  #pakka {
+    font-size: 2vh;
+  }
+  #in_btns {
+    width: 90%;
+  }
+  #foot {
+    height: 20vh;
+  }
+  #foot_text {
+    font-size: 1.5vh;
+    line-height: 1em;
+  }
+  #foot_imgs {
+    width: 30%;
+  }
+  .type,
+  .type2,
+  .type3 {
+    font-size: 2vh;
+    padding-right: 1em;
+  }
+}
+@media screen and (min-device-width: 1000px) and (max-device-width: 1300px) {
+  #line1,
+  #line2,
+  #line3,
+  #line4,
+  #line5 {
+    display: none;
+  }
+  #rochet_info1,
+  #rochet_info2,
+  #rochet_info3,
+  #rochet_info4,
+  #rochet_info5 {
+    display: none;
+  }
+}
+@media screen and (min-device-width: 1800px) {
+  #rochet_info1,
+  #rochet_info2,
+  #rochet_info3,
+  #rochet_info4,
+  #rochet_info5 {
+    font-size: 2vh;
+  }
+}

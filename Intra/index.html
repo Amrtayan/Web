@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600&family=IBM+Plex+Sans:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>ExPede</title>
+  </head>
+  <body onload="rochet_load()">
+    <section id="landing">
+      <div
+        id="star_container"
+        data-aos="fade-in"
+        data-aos-delay="1000"
+        data-aos-once="true"
+      >
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+      </div>
+
+      <div id="logo_anim">
+        <img
+          id="logomation"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          data-aos-once="true"
+          class="load_anim"
+          src="Web_imgs/logo3.png"
+        />
+      </div>
+
+      <img
+        data-aos="fade-in"
+        data-aos-delay="2000"
+        data-aos-once="true"
+        id="land_moon"
+        src="Web_imgs/moo-01.png"
+      />
+      <img
+        data-aos="fade-in"
+        data-aos-delay="2000"
+        data-aos-once="true"
+        id="land_planet"
+        src="Web_imgs/Jupiturn-01.png"
+      />
+
+      <a class="link" href="#info"
+        ><p id="go">
+          <span
+            data-aos="fade-in"
+            data-aos-delay="2900"
+            data-aos-anchor="#landing"
+            data-aos-once="true"
+          >
+            Explore</span
+          >
+          <img
+            data-aos="fade-in"
+            data-aos-delay="2900"
+            data-aos-anchor="#landing"
+            data-aos-once="true"
+            id="go_img"
+            src="Web_imgs/down-arrow.png"
+          /></p
+      ></a>
+    </section>
+
+    <section id="info">
+      <img
+        id="info_container"
+        data-aos="fade-in"
+        data-aos-once="true"
+        src="Web_imgs/text_bg1.png"
+      />
+      <div id="stones">
+        <img class="rocks" src="Web_imgs/Rock1.png" />
+        <img class="rocks" src="Web_imgs/Rock2.png" />
+        <img class="rocks" src="Web_imgs/rock2.5.png" />
+        <img class="rocks" src="Web_imgs/Rock3.png" />
+        <img class="rocks" src="Web_imgs/Rock4.png" />
+        <img class="rocks" src="Web_imgs/Rock5.png" />
+      </div>
+      <div id="info_content">
+        <div
+          id="info_head1"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          Travel beyond the limits of the sky
+        </div>
+
+        <div id="info_text1">
+          <p data-aos="fade-right" data-aos-delay="700" data-aos-once="true">
+            What our ancestors could only dream of, is now
+            <span class="highlight"> within you reach.</span>
+          </p>
+          <p data-aos="fade-left" data-aos-delay="800" data-aos-once="true">
+            For the first time in India, you have a<span class="highlight"> chance to go to space</span>
+          </p>
+          <p data-aos="fade-right" data-aos-delay="900" data-aos-once="true">
+            Explore the vast possibilities of the universe,
+            <span class="highlight">with us.</span>
+          </p>
+        </div>
+
+        <a class="link" href="#info_container2">
+          <div id="go2">
+            <span
+              style="width: 6em;"
+              id="go2"
+              data-aos="fade-up"
+              data-aos-anchor="#info_head"
+            >
+              Learn More</span
+            >
+            <img
+              data-aos="fade-up"
+              data-aos-anchor="#info_head"
+              id="go2_img"
+              src="Web_imgs/solid_darrow.png"
+            />
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="info2">
+      <img id="info_container2" src="Web_imgs/text_bg2.png" />
+      <div id="info_content2">
+        <div id="info_head2" data-aos="fade-left" data-aos-delay="200">
+          Introducing
+        </div>
+
+        <div id="info_text2" data-aos="fade-right" data-aos-delay="500">
+          <p>
+            <span class="highlight"> Exp-II</span>, our latest model, which
+            promises a safe and secure journey for our customers.
+          </p>
+          <p>
+            Using technology from planet
+            <span class="highlight"> Teknopia</span> , we have
+            <span class="highlight"> brought down the costs </span> by 90% .
+          </p>
+        </div>
+
+        <a class="link" href="#plan">
+          <div id="book" data-aos="fade-right" data-aos-delay="500">
+            Book your trip now<span id="exclaim">!</span>
+          </div>
+        </a>
+      </div>
+
+      <div id="rochet_container">
+
+      <img id="rochet" data-aos="fade-in" src="Web_imgs/Rochet.png" />
+
+      <img
+        id="line1"
+        data-aos="fade-in"
+        data-aos-delay="500"
+        class="info_lines"
+        src="Web_imgs/info_line1.png"
+      />
+      <img
+        id="line2"
+        data-aos="fade-in"
+        data-aos-delay="1000"
+        class="info_lines"
+        class="info_lines"
+        src="Web_imgs/info_line2.png"
+      />
+      <img
+        id="line3"
+        data-aos="fade-in"
+        data-aos-delay="1500"
+        class="info_lines"
+        class="info_lines"
+        src="Web_imgs/info_line3.png"
+      />
+      <img
+        id="line4"
+        data-aos="fade-in"
+        data-aos-delay="2000"
+        class="info_lines"
+        class="info_lines"
+        src="Web_imgs/info_line4.png"
+      />
+      <img
+        id="line5"
+        data-aos="fade-in"
+        data-aos-delay="2500"
+        class="info_lines"
+        class="info_lines"
+        src="Web_imgs/info_line5.png"
+      />
+
+      <div class="rochet_info" id="rochet_info1">Safe Cockpit</div>
+      <div class="rochet_info" id="rochet_info2">H/He Fuel tank</div>
+      <div class="rochet_info" id="rochet_info3">Titanium Alloyed</div>
+      <div class="rochet_info" id="rochet_info4">Fusion thruster</div>
+      <div class="rochet_info" id="rochet_info5">Support Thrust</div>
+
+      <p id="rochet_name" data-aos="fade-in" data-aos-anchor="#info2_head">
+        Exp-II
+      </p>
+
+      </div>
+    </section>
+
+    <section id="plan">
+      <div
+        id="star_container4"
+        data-aos="fade-in"
+        data-aos-delay="1000"
+        data-aos-once="true"
+      >
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+      </div></a>
+
+      <div id="plan_head">Plan your journey</div>
+      <div id="universe">
+        <a class="link" href="#planet_head"> <div class="planet_mask" id="rhopalocera">
+          <div class="planet" id="m2" onclick="opt_witheria()"></div>
+          <div class="planet_name_bg">
+            <p class="planet_name">Witheria</p>
+          </div>
+        </div></a>
+        <a class="link" style="z-index: 200;" href="#planet_head"><div class="planet_mask" id="dearth">
+          <div class="planet" id="m3" onclick="opt_dearth()"></div>
+          <div class="planet_name_bg"><p class="planet_name">Dearth</p></div>
+        </div>
+        <a class="link" href="#planet_head"><div class="planet_mask" id="pyrous">
+          <div class="planet" id="m4" onclick="opt_pyrous()"></div>
+          <div class="planet_name_bg">
+            <p class="planet_name">Pyrous</p>
+          </div>
+        </div></a>
+      </div>
+    </section>
+
+    <section id="plan2">
+      <div
+        id="star_container3"
+        data-aos="fade-in"
+        data-aos-delay="1000"
+        data-aos-once="true"
+      >
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+      </div>
+
+      <div id="planet_info_container1">
+        <div id="planet_head">Dearth</div>
+        <div id="planet_info">
+          In the deep seas of Dearth, lies a mystical vareity of unearthly
+          creatures, which you can explore in a submarine. The planet has no
+          land surface and hence under water residencies are a speciality here.
+        </div>
+        <table id="planet_stats">
+          <tr>
+            <td class="type">Galaxy</td>
+            <td>Andromeda</td>
+          </tr>
+          <tr>
+            <td class="type">Star system</td>
+            <td>Chrolar System</td>
+          </tr>
+          <tr>
+            <td class="type">Distance</td>
+            <td>2.54M lt. yrs</td>
+          </tr>
+          <tr>
+            <td class="type">ETA</td>
+            <td>3 weeks</td>
+          </tr>
+        </table>
+      </div>
+      <div id="planet_info_container2">
+        <div id="planet_head2">Pyrous</div>
+        <div id="planet_info">
+          In the blazing planet of Pyrous, everything burns, and is yet immune
+          to flames. Plants have fire instead of leaves, and animals have candle
+          fire on their tails. The most famous site at this planet is River
+          Ignis, which has flowing fire.
+        </div>
+        <table id="planet_stats">
+          <tr>
+            <td class="type2">Galaxy</td>
+            <td>Andromeda</td>
+          </tr>
+          <tr>
+            <td class="type2">Star system</td>
+            <td>Javier System</td>
+          </tr>
+          <tr>
+            <td class="type2">Distance</td>
+            <td>3.14M lt. yrs</td>
+          </tr>
+          <tr>
+            <td class="type2">ETA</td>
+            <td>4 weeks</td>
+          </tr>
+        </table>
+      </div>
+      <div id="planet_info_container3">
+        <div id="planet_head3">Witheria</div>
+        <div id="planet_info">
+          Covered with dense forests, Witheria has the most biologically diverse
+          population, which includes many creatures earlier only considered
+          mythical. <br />
+          * WARNING- the planet is considered the home planet of the Siren Head.
+          Travel at your own risk. *
+        </div>
+        <table id="planet_stats">
+          <tr>
+            <td class="type3">Galaxy</td>
+            <td>Andromeda</td>
+          </tr>
+          <tr>
+            <td class="type3">Star system</td>
+            <td>Javier System</td>
+          </tr>
+          <tr>
+            <td class="type3">Distance</td>
+            <td>3.14M lt. yrs</td>
+          </tr>
+          <tr>
+            <td class="type3">ETA</td>
+            <td>4 weeks</td>
+          </tr>
+        </table>
+      </div>
+      <a class="link" href="#footer"> <button id="select">Select</button></a>
+
+      <img id="astro_mamu" src="Web_imgs/Astro_mamu.png" />
+    </section>
+    <section id="footer">
+      <div
+        id="star_container2"
+        data-aos="fade-in"
+        data-aos-delay="1000"
+        data-aos-once="true"
+      >
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+        <img class="stars" src="Web_imgs/star.png" />
+      </div>
+
+      <div id="footer_head">Register Now</div>
+      <form id="footer_register" autocomplete="off">
+        <div id="submit_text">
+          Thank you for registering! We will contact you shortly via email. Log
+          in to check for updates!
+        </div>
+
+        <input
+          type="email"
+          id="email"
+          onclick="focus()"
+          placeholder="Your Email"
+        />
+        <input
+          type="password"
+          id="pass"
+          onclick="focus()"
+          placeholder="Password"
+        />
+        <div id="in_btns">
+          <button id="confirm" type="submit" onclick="plswork()">
+            Log In
+          </button>
+          <button id="pakka" type="submit">Create</button>
+        </div>
+      </form>
+      <img id="foot" src="Web_imgs/foot1.png" />
+      <div id="foot_text">
+        All the illustrations are self made.<br />
+        cw@intrasubmissions.2020
+      </div>
+      <div id="foot_imgs">
+        <img class="foot_img" src="Web_imgs/discord.png" />
+        <img class="foot_img" src="Web_imgs/twitter.png" />
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="aos.js"></script>
+    <script type="text/javascript">
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+
+    <script src="script.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD5hNMfoQTOc6rc2RMV59oVbCuYkUQuPo4",
+        authDomain: "intra-82347.firebaseapp.com",
+        databaseURL: "https://intra-82347.firebaseio.com",
+        projectId: "intra-82347",
+        storageBucket: "intra-82347.appspot.com",
+        messagingSenderId: "272899517986",
+        appId: "1:272899517986:web:c0a0de668d7dc0a614647b",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
